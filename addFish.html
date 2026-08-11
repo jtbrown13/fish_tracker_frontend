@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Western PA Fish Tracker</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href="stylesheets/fishtheme.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <!--navigation-->
+        <div class ="navbar">
+            <a href="index.html">Home</a>
+            <a href="addFish.html">Add Fish</a>
+            <a href="modifyFish.html">Change Fish</a>
+        </div>
+        
+        <div class="container">
+            <div class="form-container">
+                <h2>Add Fish</h2>
+                <form class ="form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Name" required>
+
+                    <label for="type">Type:</label>
+                    <select id="type" name="type" required>
+                        <option value="">Select Type</option>
+                        <option value="Bass">Bass</option>
+                        <option value="Trout">Trout</option>
+                        <option value="Crappie">Crappie</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <div class="button-container">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>                 
+                </form>
+            </div>
+
+            <!---this is for toast messages-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <script src="js/jquery.toaster.js"></script>
+
+            <!---This is for the post messge-->
+            <script src="js/postFish.js"></script>
+    </body>
+</html>
