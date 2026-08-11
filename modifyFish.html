@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Western PA Fish Tracker</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href="stylesheets/fishtheme.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <!--navigation-->
+        <div class ="navbar">
+            <a href="index.html">Home</a>
+            <a href="addFish.html">Add Fish</a>
+            <a href="modifyFish.html">Change Fish</a>
+        </div>
+        
+        <div class="container">
+            <div class="form-container">
+                <h2>Change Fish</h2>
+                <form class ="updateForm">
+                <div class="form-group">
+                <label for="fishSelect">Select Fish to Update:</label>
+                <select id="fishSelect" class="form-control" required>
+                    <option value="">-- Select a Fish --</option>
+                </select>
+            </div>
+
+            <!-- Text box that auto-fills when selected -->
+            <div class="form-group">
+                <label for="fishNameInput">Name:</label>
+                <input type="text" id="fishNameInput" class="form-control" placeholder="Enter Name" required>
+            </div>
+
+                    <div class="button-container">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>                 
+                </form>
+            </div>
+
+            <!---this is for toast messages-->
+            <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <script src="js/jquery.toaster.js"></script>
+
+            <!---This is for the post messge-->
+            <script src="js/putFish.js"></script>
+    </body>
+</html>
